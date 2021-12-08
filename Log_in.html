@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <title>Биатлон: Кубок мира 2021-2022 - Лидеры сезона</title>
+</head>
+
+<body>
+<div id="heading">
+  <h1><a id="top"></a>Биатлон: Кубок мира 2021/2022</h1>
+</div>
+
+<div id='navigation'>
+  <nav>
+        <a href="My_website.html">Расписание</a>
+        <a href="Medals.html">Медальный зачёт Кубка мира</a>
+        <a href="Leaders.html">Лидеры сезона</a>
+        <a class="current" href="Log_in.html">Личный кабинет</a>
+        <a href="https://www.sports.ru/biathlon/" target="blanc">Новости</a>
+  </nav>
+</div>
+
+<div id='description'>
+  <p> Зарегистрируйтесь на сайте, чтобы получать на почту уведомления
+    о самых свежих новостях биатлона! </p>
+</div>
+
+<div id="form">
+  <form action="http://g06u33.nn2000.info/cgi-bin/form_action.py" method="post" target="_blank">
+    <table>
+      <tr>
+        <td>
+          <p>Фамилия: <input type="Text" name="last_name" placeholder="Ваша фамилия"></p>
+          <p>Имя: <input type="Text" name="name" placeholder="Ваше имя"></p>
+          <p>Номер телефона: <input type="text" name="phone_number" placeholder="Ваш номер телефона"></p>
+          <p>E-mail: <input type="text" name="email" placeholder="Ваша электронная почта"></p>
+          <p>Дата: <input type="date" name="date"></p>
+        </td>
+
+        <td>
+          <p>Как часто Вы смотрите биатлон?
+            <select name="frequence">
+              <option value="Иногда">Иногда</option>
+              <option value="Достаточно часто">Достаточно часто</option>
+              <option value="Не пропускаю ни одной гонки">Не пропускаю ни одной гонки</option>
+            </select>
+          </p>
+
+          <p>Какие соревнования по биатлону Вы предпочитаете смотреть?
+          <input type="Checkbox" name="competitions">Кубок мира<br>
+          <input type="Checkbox" name="competitions">Кубок IBU<br>
+          <input type="Checkbox" name="competitions">Кубок России<br>
+          </p>
+
+        </td>
+      </tr>
+    </table>
+      <p>Название файла: <input type="text" name="000_file_name" value="kurnakova.txt">
+            <br>Тип записи в файл:<select name="010_mode">
+        <OPTION value="a">a - дозаписать в файл</OPTION>
+        <OPTION value="w">w - очистить файл и записать в файл</OPTION>
+        </select>
+            <input type="hidden" name="function" value="page">
+            <input type="hidden" name="page_id" value="3"></p>
+      <p id="buttons"><input type="reset" name="reset" value="Обновить">
+      <input type="submit" name="submit" value="Отправить"></p>
+      <a href='http://g06u33.nn2000.info/tmp/kurnakova.txt' target='_blank'>Результаты</a>
+  </form>
+</div>
+
+</body>
