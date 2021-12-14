@@ -221,3 +221,15 @@ body{
   right: 0;
   bottom: 0;
 }
+
+.big_image{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.big_image img{
+  width: 600px;
+  height: 400px;
+}
